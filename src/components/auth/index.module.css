@@ -1,0 +1,25 @@
+.wrapper {
+    @apply flex flex-col justify-center	items-center h-full m-auto
+}
+
+.form {
+    width: 100%;
+    min-width: 30vw;
+    @apply flex flex-col px-12 py-8 bg-white rounded-xl mt-64
+}
+
+.form__title {
+    @apply text-4xl font-medium mb-6 text-gray-700
+}
+
+.form__group {
+    @apply mt-4
+}
+
+.form__button.form__button {
+    @apply mx-auto mt-6 text-xl px-24 py-2
+}
+
+.redirect {
+    @apply text-blue-500
+}
