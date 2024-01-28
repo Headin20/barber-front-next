@@ -1,0 +1,12 @@
+.container {
+    @apply flex flex-col p-16 w-full
+}
+
+.dropzone {
+    @apply flex flex-1 flex-col items-center p-20 border border-2 border-dashed border-slate-500 rounded-md bg-slate-300 outline-0
+
+}
+
+.draggable.draggable {
+    @apply border-blue-500
+}

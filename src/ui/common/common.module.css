@@ -1,0 +1,130 @@
+.avatar {
+    @apply w-16 h-16 object-cover rounded-full
+}
+
+.header__wrapper {
+    @apply flex items-center justify-end -mt-4 bg-white border border-b-gray-400 relative
+}
+
+.header__logo {
+    transform: translate(-50%, -50%);
+    @apply absolute top-1/2 left-1/2
+}
+
+.header__dropdown {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 0;
+    @apply border border-l-gray-400 ml-auto
+}
+
+.modal__overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    @apply fixed top-0 left-0 w-full h-full flex justify-center items-center
+}
+
+.modal__overlay__open {
+    opacity: 1;
+}
+
+.modal {
+    transform: translateY(-4rem);
+    opacity: 0;
+    transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+    @apply relative p-8 rounded-md bg-white
+}
+
+.modal__open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal__close__button {
+    @apply absolute -top-8 right-2 border-none cursor-pointer text-lg text-white bg-transparent
+}
+
+.modal__header {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: calc(100% + 4rem);
+    @apply border border-b-gray-400 p-8 pt-0 -mx-8 flex justify-between items-center
+}
+
+.table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    @apply w-full overflow-hidden bg-white rounded-md
+}
+
+.table tr {
+    @apply border border-t-transparent border-b-gray-400
+}
+
+.table th {
+    @apply font-medium
+}
+
+.table th, .table td {
+    box-sizing: border-box;
+    @apply text-start py-2 px-4 truncate
+}
+
+.table th:first-child, .table td:first-child {
+    @apply pl-16
+}
+
+.table td span {
+    @apply truncate
+}
+
+.side__bar {
+    height: auto;
+    min-height: 100vh;
+    min-width: 15%;
+    @apply bg-white -mt-4 pt-20 border border-gray-400 border-y-transparent flex flex-col
+}
+
+.left__tab {
+    @apply flex items-center px-6 py-3 border border-transparent border-t-gray-400 text-gray-500 font-medium
+}
+
+.left__tab svg {
+    @apply w-8 h-8
+}
+
+.left__tab path {
+    @apply fill-gray-500
+}
+
+.left__tab:last-child {
+    @apply border-b-gray-400 mb-auto
+}
+
+.left__tab:hover {
+    @apply text-blue-500 font-medium border-blue-500 border-l-transparent
+}
+
+.left__tab:hover path {
+    @apply fill-blue-500
+}
+
+.left__tab.active {
+    @apply bg-blue-500 text-white font-medium
+}
+
+.left__tab.active path {
+    @apply fill-white
+}
+
+.tab__arrow {
+    transform: rotate(270deg);
+    @apply mt-1 !w-2 !h-2 ml-auto
+}
+
+.tab__arrow path {
+    /*fill: white;*/
+}

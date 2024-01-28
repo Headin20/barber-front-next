@@ -1,0 +1,56 @@
+.loading {
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    left: calc(50% - 1rem);
+    top: calc(50% - 1rem);
+
+    @apply inline-block w-8 h-8 border border-2 rounded-full border-t-blue-500 fixed z-10
+}
+
+.loading__indicated {
+    position: relative;
+}
+.loading__indicated__fullscreen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    backdrop-filter: blur(0.125rem) saturate(0.3);
+}
+
+.loading__indicated.loading__indicator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.01);
+    z-index: 1000;
+}
+
+.loading__indicated.loading__indicator.hidden {
+    display: none;
+}
+
+.loading__indicated.loading__indicator.spinner {
+    position: absolute;
+}
+
+.blurry {
+    filter: blur(.5rem);
+    position: static;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

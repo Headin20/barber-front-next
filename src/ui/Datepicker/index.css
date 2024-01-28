@@ -1,0 +1,51 @@
+.react-datepicker {
+    @apply font-sans border-blue-400
+}
+
+.react-datepicker-wrapper {
+    @apply w-full
+}
+.react-datepicker__input-container input {
+    @apply text-base text-gray-700 font-medium outline-0 border-slate-300 border rounded-md px-3 py-1
+}
+
+.react-datepicker__header {
+    @apply bg-sky-100 border-blue-400
+}
+.react-datepicker__navigation-icon::before {
+    @apply border-gray-400
+}
+
+.react-datepicker__current-month {
+    @apply text-gray-700
+}
+
+.react-datepicker__day-name {
+    @apply text-gray-400 font-medium
+}
+
+.react-datepicker__day {
+    min-width: 1.5rem;
+    line-height: 1.5rem;
+    @apply text-gray-700 text-base p-1 border border-transparent
+}
+
+.react-datepicker__day:hover {
+    @apply bg-blue-300 border border-blue-500
+}
+
+.react-datepicker__day--in-range,
+.react-datepicker__day--in-selecting-range:not(
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--in-range,
+    .react-datepicker__year-text--in-range)
+{
+    @apply text-white bg-blue-500
+}
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after {
+    @apply border-b-sky-100
+}
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before {
+    @apply border-b-blue-400
+}

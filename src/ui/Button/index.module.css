@@ -1,0 +1,47 @@
+.btn {
+    @apply ease-out duration-300 py-1 px-6 border-solid border-2 rounded-full font-medium disabled:opacity-50
+}
+
+.btn__default {
+    @apply border-gray-600
+    hover:bg-gray-600 hover:text-white
+}
+.btn__default path {
+    @apply fill-gray-600
+}
+
+.btn__danger:hover path {
+    @apply fill-white
+}
+
+.btn__danger {
+    @apply bg-red-600 text-white
+    hover:border-red-600 hover:bg-white hover:text-red-600
+}
+.btn__danger:hover path {
+    @apply fill-red-600
+}
+
+.btn__green {
+    @apply bg-green-600 text-white
+    hover:border-green-600 hover:text-green-600 hover:bg-white
+}
+.btn__green:hover path {
+    @apply fill-green-600
+}
+
+.btn__primary {
+    @apply bg-blue-500 text-white
+    hover:border-blue-500 hover:text-blue-500 hover:bg-white
+}
+.btn__primary:hover path {
+    @apply fill-blue-500
+}
+
+.btn__link {
+    @apply p-0 text-blue-500 border-transparent
+}
+
+.btn__link:hover {
+    @apply text-blue-600 opacity-80
+}

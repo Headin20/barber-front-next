@@ -1,0 +1,19 @@
+.form__label {
+    @apply text-gray-700 font-medium text-lg mb-3
+}
+
+.form__field {
+    @apply text-gray-700 font-normal text-base outline-0 border-slate-300 border rounded-md px-3 py-1
+    w-full
+}
+
+.form__label.invalid {
+    @apply text-red-600
+}
+.form__field.invalid {
+    @apply border-red-600
+}
+
+.select.invalid {
+    @apply border-red-600
+}

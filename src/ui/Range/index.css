@@ -1,0 +1,15 @@
+.rc-slider-rail {
+    @apply bg-slate-300
+}
+.rc-slider-track {
+    @apply bg-blue-500
+}
+.rc-slider-handle {
+    @apply border-blue-500 opacity-100
+}
+.input-block {
+    @apply flex items-center justify-between mt-4
+}
+.input-block input {
+    @apply w-16 p-2 border border-slate-300 outline-blue-500 text-center rounded-md
+}

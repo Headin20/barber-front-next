@@ -1,0 +1,19 @@
+.arrow {
+    position: absolute;
+    right: .75rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow__is_open {
+    transform: rotate(180deg) translate(50%, 50%);
+}
+
+.items__dropdown {
+    min-height: .75rem;
+    overflow: auto;
+}
+
+.react__dropdown__select {
+    min-width: 10rem;
+}
